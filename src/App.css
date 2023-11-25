@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+.homeWrapper {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.formWrapper {
+	background: #262626;
+	border-radius: 14px;
+	padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mainLogo {
+	width: 15vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.invitation {
+	color: #ffa200;
+	font-size: large;
+	margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.inputsBlock input {
+	width: 100%;
+	height: 30px;
+	border-radius: 5px;
+	border: none;
+	padding: 3px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+	padding: 5px 25px;
+	border-radius: 5px;
+	border: none;
+	font-size: 15px;
+	font-weight: bolder;
+}
+
+.joinBtn {
+	background-color: #e0b76f;
+	transition: 0.5s ease-in-out;
+}
+
+.joinBtn:hover {
+	background-color: #ffa200;
+}
+
+.notInvite {
+	color: #fff;
+}
+
+.newRoom {
+	color: #e0b76f;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.newRoom:hover {
+	color: #ffa200;
+	transition: 0.5s ease-in-out;
+}
+
+.mainWrap {
+	display: grid;
+	grid-template-columns: 230px 1fr;
+	height: 100vh;
+}
+
+.aside {
+	padding: 16px;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+}
+
+.asideInner {
+	flex: 1;
+}
+
+.clientLists {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.client {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	font-weight: bold;
+}
+
+.userName {
+	margin-top: 5px;
+}
+
+.logo {
+	border-bottom: 1px solid #ffa200;
+	padding-bottom: 10px;
+}
+
+.logoImage {
+	width: 200px;
+}
+
+.leaveBtn {
+	margin-top: 20px;
+	background-color: #e0b76f;
+}
+
+.leaveBtn:hover {
+	background-color: #ffa200;
+	transition: 0.5s ease-in-out;
+}
+
+.editorWrap {
+	background: #fff;
 }
